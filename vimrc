@@ -1,17 +1,22 @@
 " Fang Yixun's vimrc file
+"  Base on vgod's vimrc https://github.com/vgod/vimrc.git
+"
 " GITHUB https://github.com/gzeureka/dotvim
 
-" For pathogen.vim: auto load all plugins in .vim/bundle
+" for pathogen.vim: auto load all plugins in .vim/bundle
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-" For pathogen.vim: auto load all plugins in .vim/bundle
+" general settings
 set nocompatible    " not compatible with the old-fashion vi mode
 set bs=2            " allow backspacing over everything in insert mode
 set history=50      " keep 50 lines of command line history
 set ruler           " show the cursor position all the time
 set autoread        " auto read when file is changed from outside
 
+" line number
+set number
+highlight LineNr guifg=DarkGrey
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -26,7 +31,7 @@ syntax on		" syntax highlight
 set hlsearch		" search highlighting
 
 if has("gui_running")	" GUI color and font settings
-  set guifont=Osaka-Mono:h20
+  " set guifont=Osaka-Mono:h20
   set background=dark 
   set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
