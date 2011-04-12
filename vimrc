@@ -1,11 +1,11 @@
 " My Vimrc file
-" Maintainer: www.swaroopch.com/contact/
-" Reference: Initially based on http://dev.gentoo.org/~ciaranm/docs/vim-guide/
-" License: www.opensource.org/licenses/bsd-license.php
-" Use Vim settings, rather then Vi settings (much better!).
 
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+" Use pathogen to manage plugins
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " Enable syntax highlighting.
 syntax on
