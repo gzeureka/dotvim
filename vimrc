@@ -302,7 +302,7 @@ let g:CommandTMaxHeight = 15
 let g:SuperTabDefaultCompletionType = "context"
 
 " --- dbext
-let g:dbext_default_profile_DEVDB = 'type=ORA:host=192.168.3.3:srvname=orcldev'
-let g:dbext_default_profile_GZDB = 'type=ORA:host=192.168.1.234:srvname=gd'
-let g:dbext_default_profile_SHDB = 'type=ORA:host=192.168.1.253:srvname=orcl'
+let g:dbext_default_profile_DEVDB = 'type=ORA:srvname=//192.168.3.3\:1521/orcldev'
+let g:dbext_default_profile_GZDB = 'type=ORA:srvname=//192.168.1.234\:1521/gd'
+let g:dbext_default_profile_SHDB = 'type=ORA:srvname=//192.168.1.253\:1521/orcl'
 
