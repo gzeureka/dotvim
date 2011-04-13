@@ -1,3 +1,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/CuteErrorMarker"]
+	path = bundle/CuteErrorMarker
+	url = https://github.com/Twinside/vim-cuteErrorMarker.git
