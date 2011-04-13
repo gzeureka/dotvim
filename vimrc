@@ -154,6 +154,9 @@ map <C-t><C-t> :tabnew<CR>
 " close tab
 map <C-t><C-w> :tabclose<CR> 
 
+" Toggle NERDTree
+map <F2> :NERDTreeToggle<CR>
+
 " ,/ turn off search highlighting
 nmap <leader>/ :nohl<CR>
 
