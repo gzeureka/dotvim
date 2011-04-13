@@ -1,12 +1,49 @@
 Installation:
-    git clone git://github.com/gzeureka/dotvim.git ~/.vim
+   git clone git://github.com/gzeureka/dotvim.git ~/.vim
+   cd ~/.vim
+   ./install-dotvim.sh
 
-Create symlinks:
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+(Optional, if you want Command-T)Compile the Command-T plugin
+   cd ~/.vim/bundle/command-t/ruby/command-t
+   ruby extconf.rb
+   make
 
-Switch to the `~/.vim` directory, and fetch submodules:
-    cd ~/.vim
-    git submodule init
-    git submodule update
+Use `git pull` to upgrade plugin bundles
+
+PLUGINS
+   Pathogen:   Pathogen let use install a plugin as a bundle in ~/.vim/bundle separately.
+
+   Nerd Tree:  A tree explorer plugin for navigating the filesystem.
+      Useful commands:
+         :Bookmark [name] - bookmark any directory as name
+         :NERDTree [name] - open the bookmark [name] in Nerd Tree
+
+   AutoClose:  Inserts matching bracket, paren, brace or quote.
+
+   vim-surround:  deal with pairs of surroundings.
+
+   matchit:    extended % matching for HTML, LaTeX, and many other languages.
+
+   xmledit:    XML/HTML tags will be completed automatically.
+
+   Command-T:  open and navigate between files with cmd-t.
+
+   SuperTab:   Do all your insert-mode completion with Tab.
+
+   snipMate:   TextMate-style snippets for Vim
+      `:help snipMate` to see more info.
+
+   YankRing:   Maintains a history of previouse yanks, changes and deletes
+      `:help yankring` to see more info
+
+   VisIncr:    Produce increasing/decreasing columns of numbers, dates, or daynames.
+
+   Cute Error Marker: showing error and warning icons on line.
+      Note: MacVim users need to enable "Use experimental renderer" to see graphical icons.
+
+   vim-latex:  LaTeX support.
+
+   OmniCppComplete:  C/C++ omni-completion with ctags database.
+
+   JavaComplete:  Java Omni-completion.
 
