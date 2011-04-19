@@ -37,7 +37,7 @@ if has("gui_running")	" GUI color and font settings
   set cursorline        " highlight current line
   colors moria
 else
-" terminal color settings
+  " terminal color settings
   colors vgod
 endif
 
@@ -77,6 +77,7 @@ set laststatus=2
 set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \ 
 set statusline+=\ \ \ [%{&ff}/%Y] 
 set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\ 
+set statusline+=\ \ \ [ASCII=\%03.3b]\ [HEX=\%02.2B]
 set statusline+=%=%-10.(%l,%c%V%)\ %p%%/%L
 
 function! CurDir()
