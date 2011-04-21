@@ -66,8 +66,8 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=3 
-   set shiftwidth=3 
+   set softtabstop=4 
+   set shiftwidth=4 
 
    au FileType Makefile set noexpandtab
 "}      							
@@ -242,7 +242,7 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
-
+   
 fun! ViewUTF8()
 	set encoding=utf-8                                  
 	set termencoding=chinese
