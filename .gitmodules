@@ -52,3 +52,6 @@
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = https://github.com/vim-scripts/vcscommand.vim
+[submodule "bundle/vimim"]
+	path = bundle/vimim
+	url = https://github.com/vim-scripts/VimIM
