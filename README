@@ -10,6 +10,10 @@ Installation:
 
 Use `git pull` to upgrade plugin bundles
 
+How to add plugin
+   cd ~/.vim
+   git submodule add plugin_url bundle/plugin_name
+
 PLUGINS
    Pathogen:   Pathogen let use install a plugin as a bundle in ~/.vim/bundle separately.
 
