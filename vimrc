@@ -198,6 +198,9 @@ cmap cd. lcd %:p:h
 " PROGRAMMING SHORTCUTS
 "--------------------------------------------------------------------------- 
 
+"taglist
+set Tlist_Ctags_Cmd = /opt/ctags-5.8/ctags
+
 " Ctrl-[ jump out of the tag stack (undo Ctrl-])
 map <C-[> <ESC>:po<CR>
 
