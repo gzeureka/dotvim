@@ -203,7 +203,7 @@ function! Find(...)
   if a:0==2
     let path=a:2
   endif
-  let l:list=system("find ".path. " -name '".a:1."' | grep -v .svn ")
+  let l:list=system("find ".path. " -iname '".a:1."*' | grep -v -E '(\.svn|\.class)' ")
   let l:num=strlen(substitute(l:list, "[^\n]", "", "g"))
   if l:num < 1
     echo "'".a:1."' not found"
@@ -343,7 +343,7 @@ let g:CommandTMaxHeight = 15
 let g:SuperTabDefaultCompletionType = "context"
 
 " --- dbext
-let g:dbext_default_profile_DEVDB = 'type=ORA:srvname=//192.168.3.3\:1521/orcldev'
+let g:dbext_default_profile_DEVDB = 'type=ORA:srvname=//192.168.3.3\:1521/orclsh'
 let g:dbext_default_profile_GZDB = 'type=ORA:srvname=//192.168.1.231\:1521/gd'
 let g:dbext_default_profile_SHDB = 'type=ORA:srvname=//192.168.1.253\:1521/orcl'
 "let g:dbext_default_profile_ZYDB = 'type=SQLSRV:host=192.168.3.2'
