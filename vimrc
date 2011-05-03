@@ -236,7 +236,7 @@ endfunction
 command! -nargs=* Find :call Find(<f-args>)
 
 "taglist
-set Tlist_Ctags_Cmd = /opt/ctags-5.8/ctags
+let Tlist_Ctags_Cmd = '/opt/ctags-5.8/ctags'
 
 " Ctrl-[ jump out of the tag stack (undo Ctrl-])
 map <C-[> <ESC>:po<CR>
