@@ -347,4 +347,5 @@ let g:dbext_default_profile_DEVDB = 'type=ORA:srvname=//192.168.3.3\:1521/orclsh
 let g:dbext_default_profile_GZDB = 'type=ORA:srvname=//192.168.1.231\:1521/gd'
 let g:dbext_default_profile_SHDB = 'type=ORA:srvname=//192.168.1.253\:1521/orcl'
 "let g:dbext_default_profile_ZYDB = 'type=SQLSRV:host=192.168.3.2'
+let g:dbext_default_profile_ZYDB = 'type=ODBC:dsnname=zy_comm_db'
 
