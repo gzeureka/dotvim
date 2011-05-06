@@ -61,3 +61,6 @@
 [submodule "bundle/applescript"]
 	path = bundle/applescript
 	url = https://github.com/vim-scripts/applescript.vim
+[submodule "bundle/drawit"]
+	path = bundle/drawit
+	url = https://github.com/vim-scripts/DrawIt
