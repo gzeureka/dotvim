@@ -51,3 +51,5 @@ PLUGINS
 
    JavaComplete:  Java Omni-completion.
 
+   VimClojure: Clojure editing support.
+
