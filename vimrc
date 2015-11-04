@@ -32,13 +32,18 @@ set hlsearch		" search highlighting
 
 if has("gui_running")	" GUI color and font settings
   " set guifont=Osaka-Mono:h20
+  set guifont=Meslo\ LG\ S\ DZ:h14
+  "set guifont=YaHei\ Consolas\ Hybrid:h14.5
   set background=dark 
   set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
   colors moria
+  "colors solarized
 else
   " terminal color settings
-  colors vgod
+  "colors vgod
+  set background=dark
+  colors solarized
 endif
 
 set clipboard=unnamed	" yank to the system register (*) by default
@@ -349,3 +354,13 @@ let g:dbext_default_profile_SHDB = 'type=ORA:srvname=//192.168.1.253\:1521/orcl'
 "let g:dbext_default_profile_ZYDB = 'type=SQLSRV:host=192.168.3.2'
 let g:dbext_default_profile_ZYDB = 'type=ODBC:dsnname=zy_comm_db'
 
+" --- indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+:nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+
+" --- source code folding
+" short-cut keys: za fold or unfold, zM fold all, zR unfold all
+set foldmethod=syntax
+set nofoldenable
