@@ -79,3 +79,12 @@
 [submodule "apiblueprint"]
 	path = apiblueprint
 	url = https://github.com/kylef/apiblueprint.vim
+[submodule "bundle/vim-slamhound"]
+	path = bundle/vim-slamhound
+	url = https://github.com/technomancy/slamhound
+[submodule "vim-clojure-static"]
+	path = vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static
+[submodule "bundle/vim-clojure-static"]
+	path = bundle/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static
